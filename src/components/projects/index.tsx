@@ -1,4 +1,3 @@
-'use client';
 import styles from './style.module.scss';
 import {Titles} from './titles';
 import {Description} from './description';

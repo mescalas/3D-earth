@@ -1,4 +1,3 @@
-'use client';
 import {Canvas, useLoader} from '@react-three/fiber';
 import {TextureLoader} from "three";
 import {useRef} from "react";
