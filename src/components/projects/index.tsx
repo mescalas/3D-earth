@@ -1,6 +1,7 @@
 'use client';
 import styles from './style.module.scss';
 import {Titles} from './titles';
+import {Description} from './description';
 import {useState} from "react";
 
 const data = [
@@ -41,6 +42,7 @@ export const Projects = () => {
     return (
         <div className={styles.container}>
             <Titles data={data} setSelectedProject={setSelectedProject}/>
+            <Description data={data} selectedProject={selectedProject}/>
         </div>
     )
 }
