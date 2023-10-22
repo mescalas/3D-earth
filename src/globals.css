@@ -1,4 +1,13 @@
+@font-face {
+    font-family: 'Sora-Regular';
+    src: url('/public/font/Sora-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
 body{
+    font-family: 'Sora-Regular', sans-serif;
     margin: 0;
     background-color: #0f0f0f;
 }
