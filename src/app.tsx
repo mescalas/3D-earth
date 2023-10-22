@@ -3,7 +3,7 @@ import {SmoothScroll} from "./components/smoothScroll"
 import {Projects} from "./components/projects";
 import dynamic from "next/dynamic";
 
-const Earth = dynamic(() => import('./components/earth'), {
+const Earth = dynamic(() => import('./components/earth').then((map) => map.Earth), {
     ssr: false,
     loading: () => <img src="/assets/placeholder.png"></img>
 });
