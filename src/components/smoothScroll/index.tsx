@@ -1,21 +1,21 @@
-import React, { useEffect } from "react";
-import Lenis from "@studio-freight/lenis";
+import React, { useEffect } from 'react';
+import Lenis from '@studio-freight/lenis';
 
 interface SmoothScrollProps {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }
 
 export const SmoothScroll: React.FC<SmoothScrollProps> = ({ children }) => {
-    useEffect(() => {
-        const lenis = new Lenis();
+  useEffect(() => {
+    const lenis = new Lenis();
 
-        const raf = (time: number) => {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
+    const raf = (time: number) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
 
-        requestAnimationFrame(raf);
-    }, []);
+    requestAnimationFrame(raf);
+  }, []);
 
-    return <>{children}</>;
+  return <>{children}</>;
 };

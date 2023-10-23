@@ -1,26 +1,29 @@
-.titles{
+.titles {
   width: 100%;
   border-top: 1px solid rgba(183, 171, 152, 0.25);
-  .title{
+
+  .title {
     border-bottom: 1px solid rgba(183, 171, 152, 0.25);
     cursor: default;
     position: relative;
     z-index: 2;
-    .wrapper{
+
+    .wrapper {
       display: inline-block;
       padding-left: 10%;
 
-      p{
+      p {
         display: inline-block;
         color: #b7ab98;
         text-transform: uppercase;
         font-weight: 700;
         font-size: 8vw;
         line-height: 7.5vw;
-        margin: 0px;
+        margin: 0;
         position: relative;
         z-index: 2;
-        &:nth-of-type(2){
+
+        &:nth-of-type(2) {
           display: block;
           position: absolute;
           color: #1c1c1c;
